@@ -1,0 +1,24 @@
+[project]
+name = "academic-research-tool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sambar226", email = "sameerb22601@gmail.com" }
+]
+requires-python = ">=3.13, <3.14"
+dependencies = [
+    "crewai[google-genai]>=1.15.23",
+    "crewai-tools>=1.15.23",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.4",
+    "google-generativeai>=0.8.6",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+academic-research-tool = "academic_research_tool:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
